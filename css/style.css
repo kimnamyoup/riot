@@ -1735,7 +1735,7 @@ background: url('../images/valorant/game_btn_color.png')no-repeat center center/
 
 #section4{
     width: 100%;
-    background-color: #000;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 100%) 60%, rgba(0, 0, 0, 100%) );
     position: relative;
 }
 
