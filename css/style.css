@@ -1,0 +1,2661 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{list-style: none;}
+a{text-decoration: none;}
+html{
+    font-size: 10px;
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+#section1{
+    width: 100%;
+    height: 100vh;
+    background: url('../images/bg/riotbg.png')no-repeat center   center/cover;
+    position: relative;
+}
+.header{
+    width: 100%;
+    height: 10rem;
+  position: absolute;
+  top: 0; left: 0;
+}
+.hleft{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.rmenu{
+    display: flex;
+    gap: 3rem;
+}
+
+.rmenu li a{
+    display: block;
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 10rem;
+}
+.rmenu li a:hover{
+    color:#DA0203 ;
+}
+#section2{
+    width: 100%;
+    height: 100vh;
+    background:url('../images/bg/lolbg2.png')no-repeat center center/cover;
+    position: relative;
+}
+
+.hbtns{
+display: flex;
+gap: 3rem;
+}
+
+.hbtns a{
+    width: 2.2rem;
+    height: 2.2rem;
+    display: block;
+}
+
+.hs{
+    background: url('../images/btns/white_search.png')no-repeat center center/100%;
+    transition: all .5s;
+}
+.hs:hover{
+    background: url('../images/btns/red_search.png')no-repeat center center/100%;
+}
+.hm{
+    background: url('../images/btns/white_my.png')no-repeat center center/100%;
+    transition: all .5s;
+}
+.hm:hover{
+    background: url('../images/btns/re_my.png')no-repeat center center/100%;
+}
+.hn{
+    background: url('../images/btns/white_network.png')no-repeat center center/100%;
+    transition: all .5s;
+}
+.hn:hover{
+    background: url('../images/btns/red_network.png')no-repeat center center/100%;
+}
+.s1bg{
+    width: calc(100% - 10rem);
+    height: calc(100% - 10rem);
+position: absolute;
+top: 10rem; left: 10rem;
+backdrop-filter: blur(6px);
+z-index: 1;
+}
+.s1_main{
+    width: calc(100% - 13rem);
+    height: calc(100% - 13rem);
+position: absolute;
+top: 11rem; left: 12rem;
+z-index: 2;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.s1_m1{
+    width: 56rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.m1_top{
+    width: 56rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+.m1_tit{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+}
+.notis{
+    width: 100%;
+    height: 39rem;
+}
+.notis .swiper-slide{
+    width: 56rem  !important;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    cursor: pointer;
+}
+.m1_imgbx{
+    width: 100%;
+    height: 31.5rem;
+}
+.m1b1{
+    background: url('../images/notisw/page1.png')no-repeat  center  center/cover;
+}
+.m1b2{
+    background: url('../images/notisw/page3.png')no-repeat center center/cover;
+}
+.m1b3{
+    background: url('../images/notisw/page2.png')no-repeat center center/cover;
+}
+.m1_txtbx{
+    text-align: center;
+}
+.nsw_tit{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nsw_sub{
+    font-size: 1.5rem;
+    color: #B5B5B5;
+}
+
+.m1_top .swiper-pagination-horizontal{
+width: 8rem;
+position: absolute;
+bottom: 11%; left: 50%;
+transform: translateX(-60%);
+}
+.m1_top .swiper-pagination-bullet{
+    background-color: #B5B5B5;
+}
+.m1_top .swiper-pagination-bullet-active{
+    background-color: #DA0203;
+}
+.m1_bot{
+    width: 100%;
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.bot_mid{
+    width: 100%;
+    height: 18rem;
+    display: flex;
+    justify-content: space-between;
+}
+.bm1{
+    width: 26rem;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    transition: all .5s
+}
+.bm1_m{
+    font-size: 8rem;
+    text-align: center;
+    position: relative;
+    margin-top: 1rem;
+    transition: all .5s
+
+}
+.bm1_m::after{
+    content: '진행 중인 공고';
+    position: absolute;
+    display: block;
+    font-size: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #646464;
+    transition: all .5s
+}
+.bm1:hover{
+    background-color: #DA0203;
+}
+.bm1:hover .bm1_m{
+    color: #F2F2F2;
+}
+.bm1:hover .bm1_m::after{
+    color: #F2F2F2;
+}
+.bm2{
+    width: 26rem;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    transition: all .5s    
+}
+.bm2_m{
+    font-size: 8rem;
+    text-align: center;
+    position: relative;
+    margin-top: 1rem;
+    transition: all .5s
+}
+.bm2_m::after{
+    content: '오피스';
+    position: absolute;
+    display: block;
+    font-size: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #646464;
+    transition: all .5s
+}
+.bm2:hover{
+    background-color: #DA0203;
+}
+.bm2:hover .bm2_m{
+    color: #F2F2F2;
+}
+.bm2:hover .bm2_m::after{
+    color: #F2F2F2;
+}
+.car_btn{
+    width: 20rem;
+    line-height: 6rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #363636;
+    text-align: center;
+    margin: 0  auto;
+    border-radius: 1.5rem;
+    transition: all .3s;
+}
+.car_btn:hover{
+    background-color: #DA0203;
+}
+.s1_m2{
+    width: 74rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.m2_mt{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+}
+.s1_m3{
+    width: 34rem;
+    height: 100%;
+}
+.m2_mid{
+    width: 100%;
+    height: 73rem;
+}
+.m2_glist{
+    width: 100%;
+    height: 72rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    justify-content: space-between;
+}
+.m2_glist li {
+    border-radius: 1.5rem;
+}
+.glt{
+    width: 34rem;
+    height: 26rem;
+    display: block;
+    border-radius: 1.5rem;
+    transition: all .5s;
+}
+
+.m2_glist li:nth-child(1) .glt{
+    background: url('../images/game-list/lol_img.png')no-repeat center center/cover;
+    position: relative;
+}
+.m2_glist li:nth-child(2) .glt{
+    background: url('../images/game-list/valo.png')no-repeat center center/cover;
+    position: relative;
+}
+.m2_glist li:nth-child(3) .glt{
+    background: url('../images/game-list/main_esp.png')no-repeat center center/cover;
+    position: relative;
+
+}
+.m2_glist li:nth-child(4) .glt{
+    background: url('../images/game-list/main_enter.png')no-repeat center center/cover;
+    position: relative;
+
+}
+.m2_glist li:nth-child(1) .glt::after{
+    content: '';
+    display: block;
+    width: 32rem;
+    height: 15rem;
+    background: url('../images/game-list/lol_tittle.png')no-repeat center center
+    /contain;
+    position: absolute;
+    bottom: -25%; left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    }
+.m2_glist li:nth-child(2) .glt::after{
+content: '';
+display: block;
+width: 32rem;
+height: 5.8rem;
+background: url('../images/game-list/valotitle.png')no-repeat center center
+/100%;
+position: absolute;
+bottom: -8%; left: 50%;
+transform: translateX(-50%);
+z-index: 4;
+}
+
+.m2_glist li:nth-child(3) .glt::after{
+    content: '';
+    display: block;
+    width: 32rem;
+    height: 5.8rem;
+    background: url('../images/game-list/main_esp_title.png')no-repeat center center
+    /100%;
+    position: absolute;
+    bottom: -8%; left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;  
+}
+.m2_glist li:nth-child(4) .glt::after{
+    content: '';
+    display: block;
+    width: 32rem;
+    height: 15rem;
+    background: url('../images/game-list/acane.png')no-repeat center center
+    /100%;
+    position: absolute;
+    bottom: -30%; left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;  
+}
+.s1_m3_in{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+}
+.m3_item{
+    position: relative;
+    transition: all .5s;
+    cursor: pointer;
+    border-radius: 1.5rem;
+}
+.m3_imgb{
+    width: 100%;
+    height: 9rem;
+    border-radius: 1.5rem;
+    opacity: 0.5;
+    transition: all .3s;
+}
+.m3_txtb{
+    width: 100%;
+    height: 6rem;
+    background-color: rgba(54, 54, 54, 50%);
+    border-radius: 1.5rem;
+    position: absolute;
+    bottom: -3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+.m3_txt_in{
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.m3i1 .m3_imgb{
+background: url('../images/main_noti_list/m3_img.png')no-repeat center center/cover;
+}
+.m3i2 .m3_imgb{
+background: url('../images/main_noti_list/noti2.png')no-repeat center center/cover;
+}
+.m3i3 .m3_imgb{
+background: url('../images/main_noti_list/noti3.png')no-repeat center center/cover;
+}
+.m3i4 .m3_imgb{
+background: url('../images/main_noti_list/noti4.png')no-repeat center center/cover;
+}
+.m3i5 .m3_imgb{
+background: url('../images/main_noti_list/noti5.png')no-repeat center center/cover;
+}
+.m3_item:hover{
+    box-shadow: 0px 0px  50px rgba(255, 255, 255, 50%);
+}
+.m3_item:hover .m3_imgb{
+height: 19rem;
+border-radius: 1.5rem;
+opacity: 1;
+}
+.m3_item:hover .m3_txtb{
+background-color: #DA0203;
+}
+.m3_itit{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.m3_isub{
+    color: #fff;
+}
+.glt:hover{
+    border-radius: 3.5rem;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 50%);
+    transform: scale(1.1);
+}
+
+.lolheader{
+    width: 100%;
+    height: 10rem;
+    background-color: #000;
+    position: absolute;
+    top: 0; left: 0;
+}
+.header_in{
+    width: 95%;
+    height: 10rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lolh_left{
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+.lmenu{
+    display: flex;
+    gap: 4.5rem;
+}
+.lmenu li{
+    width: 6rem;
+    line-height: 10rem;
+    text-align: center;
+}
+.lmenu li a{
+    display: block;
+    font-size: 1.5rem;
+    color: #DFC279;
+    position: relative;
+    z-index: 3;
+    transition: all .5s;
+}
+
+.lmenu li a::after{
+    content: '';
+    width: 7.5rem;
+    height: 0rem;
+    display: block;
+    background: url('../images/btns/mbtn2.png')no-repeat center center/cover;
+    position: absolute;
+    top: -1rem; left: -0.5rem;
+    z-index: -1;
+    transition: all .5s;
+}
+.lmenu li:hover a{
+    color: #fff;
+}
+.lmenu li:hover a::after{
+ height: 10rem;
+}
+.lbtns{
+    display: flex;
+   gap: 3rem;
+}
+.lbtns a{
+    width: 2.2rem;
+    height: 2.2rem;
+    display: block;
+}
+.ls{
+    background: url('../images/btns/search.png')no-repeat center center/100%;
+}
+.lm{
+    background: url('../images/btns/my.png')no-repeat center center/100%;
+}
+.ln{
+    background: url('../images/btns/network.png')no-repeat center center/100%;
+}
+.navi{
+    width: 10rem;
+    height: 58rem;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   gap: 3rem;
+    flex-direction: column;
+    position: fixed;
+    top: 13rem; left: 0rem;
+    z-index: 22;
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 50%) 50%, rgba(0, 0, 0, 0%) ); */
+}
+.navi li:nth-child(1) a img{
+    filter: invert(50%);
+}
+.navi li:nth-child(2) a img{
+    filter: invert(50%);
+}
+.navi li:nth-child(3) a img{
+    filter: invert(50%);
+}
+.navi li:nth-child(4) a img{
+    filter: invert(50%);
+}
+.lol_main{
+    position: absolute;
+    top: 11rem;
+    left: 12rem;
+    height: calc(100% - 13rem);
+    display: flex;
+}
+.lm_left{
+    width: 50rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.lm_center{
+    width: 74rem;
+    height: 100%;
+    position: relative;
+}
+.lm_right{
+    width: 50rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.lml_top{
+     width: 100%;
+     height: 50%;
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+}
+.lmtitle{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.lml_top h2 {
+    font-size: 4rem;
+    color: #fff;
+}
+.lml_top h2 span{
+    color: #DFC279;
+}
+.lmsub{
+    color: #fff;
+    font-size: 1.1rem;
+}
+.lml_bot{
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+}
+.botitle{
+    font-size: 4rem;
+    color: #fff;
+}
+.botitle span{
+    color: #DFC279;
+}
+.up_date {
+    display: flex;
+    gap: 0.4rem;
+    font-size: 1.2rem;
+    color: #909090;
+}
+.up_date span{
+    color: #DFC279;
+}
+.skin_name{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+.skin_sub{
+    font-size: 1.3rem;
+    color: #fff;
+}
+.lol-item{
+    position: absolute;
+    top: 0rem; left: 0rem;
+}
+.lol-item_imgb{
+    width: 73.6rem;
+    height: 73.6rem;
+    position: relative;
+}
+.jin1::before{
+    content: '"징크스"';
+    display: block;
+    position: absolute;
+    color: #fff;
+    top: 17%; left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.jin1::after{
+    content: '난폭한 말괄량이';
+    display: block;
+    position: absolute;
+    color: rgb(108, 114, 126);;
+    top: 14%; left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.akal1::before{
+    content: '"아칼리"';
+    display: block;
+    position: absolute;
+    color: #fff;
+  top: 17%; left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.akal1::after{
+    content: '섬기는 이 없는 암살자';
+    display: block;
+    position: absolute;
+    color: rgb(108, 114, 126);;
+  top: 14%; left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.yasu1::before{
+    content: '"야스오"';
+    display: block;
+    position: absolute;
+    color: #fff;
+    top: 17%; left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.yasu1::after{
+    content: '용서받지 못한 자';
+    display: block;
+    position: absolute;
+    color: rgb(108, 114, 126);
+    top: 14%; left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.lux1::before{
+    content: '"럭스"';
+    display: block;
+    position: absolute;
+    color: #fff;
+    top: 17%; left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 3;
+}
+.lux1::after{
+    content: '광명의 소녀';
+    display: block;
+    position: absolute;
+    color: rgb(108, 114, 126);
+    top: 14%; left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 3;
+}
+.thre1::before{
+    content: '"쓰레쉬"';
+    display: block;
+    position: absolute;
+    color: #fff;
+    top: 17%; left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 3;
+}
+.thre1::after{
+    content: '지옥의 간수';
+    display: block;
+    position: absolute;
+    color: rgb(108, 114, 126);
+    top: 14%; left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 3;
+}
+.reo1::before{
+    content: '"레오나"';
+    display: block;
+    position: absolute;
+    color: #fff;
+    top: 17%; left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 3;
+}
+.reo1::after{
+    content: '여명의 빛';
+    display: block;
+    position: absolute;
+    color: rgb(108, 114, 126);
+    top: 14%; left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.jin1{
+    background: url('../images/characters/JInx.png')no-repeat center center/cover;
+}
+.akal1{
+    background: url('../images/characters/akali.png')no-repeat center center/cover;
+}
+.yasu1{
+    background: url('../images/characters/yasuo.png')no-repeat center center/cover; 
+}
+.lux1{
+    background: url('../images/characters/lux.png')no-repeat center center/cover; 
+}
+.thre1{
+    background: url('../images/characters/thresh.png')no-repeat center center/cover; 
+}
+.reo1{
+    background: url('../images/characters/reona.png')no-repeat center center/cover; 
+}
+.clist{
+    display: flex;
+    position: absolute;
+    bottom: -0.5rem; left: 50%;
+    transform: translateX(-50%);
+}
+.clist li {
+  width: 6.4rem;
+  line-height: 6.4rem;
+}
+.clist li a{
+    display: block;
+    position: relative;
+}
+.clist li a img{
+    filter: grayscale(1);
+}
+.lol-item{
+    display: none;
+}
+.lm_center h1 {
+    position: absolute;
+    top: 5rem; left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    display: none;
+}
+.clist .c1.on a img {
+    filter: grayscale(0);
+}
+.lol-item span{
+    color: #fff;
+}
+.clist li a::after{
+    opacity: 1;
+    visibility: hidden;
+}
+.clist li:first-child a::after{
+    content: '원거리 딜러';
+    width: 5rem;
+    display: block;
+    position: absolute;
+    bottom: -0.5rem; left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+.clist li:nth-child(2) a::after{
+    content: '암살자';
+    display: block;
+    position: absolute;
+    bottom: -0.5rem; left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+.clist li:nth-child(3) a::after{
+    content: '전사';
+    display: block;
+    position: absolute;
+    bottom: -0.5rem; left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+.clist li:nth-child(4) a::after{
+    content: '마법사';
+    display: block;
+    position: absolute;
+    bottom: -0.5rem; left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+.clist li:nth-child(5) a::after{
+    content: '서포터';
+    display: block;
+    position: absolute;
+    bottom: -0.5rem; left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+.clist li:nth-child(6) a::after{
+    content: '탱커';
+    display: block;
+    position: absolute;
+    bottom: -0.5rem; left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+.c1.on a::after{
+opacity: 1;
+visibility: visible;
+}
+.score{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+.score li {
+    width: 100%;
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.score::before{
+    content: 'LOL.PS';
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 5rem;
+}
+.score::after{
+    content: 'PICK 점수';
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+ position: absolute;
+ left: 50%;
+    transform: translateX(-20%);
+}
+.s-nth{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+.s-board{
+    width: 24.7rem;
+    height: 2.5rem;
+    background-color: rgba(255, 255, 255, 50%);
+    display: block;
+}
+.s-board .sb-in{
+    display: block;
+    height: 100%;
+    background-color: #10E4F9;
+}
+.per{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+.sb1{
+    width: 36.93%;
+}
+.sb2{
+    width: 22.39%;
+}
+.sb3{
+    width: 16.17%;
+}
+.sb4{
+    width: 15.21%;
+}
+.sb5{
+    width: 15.19%;
+}
+.esmt{
+    width: 17.5rem;
+    height: 4rem;
+    background: url('../images/esports/esp-logo.png')no-repeat center center/cover;
+    display: block;
+}
+.r-esports{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.l-esport{
+    width: 17.5rem;
+}
+.l-esport li a{
+    display: flex;
+    flex-direction: column;
+}
+.est1{
+    font-size: 1.5rem;
+    color: #949494;
+}
+.esm{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+}
+.ess{
+    font-size: 1.5rem;
+    color: #949494;
+}
+.r2t{
+    line-height: 4rem;
+}
+.r2t a {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+}
+.r2-esports{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.r2-esports li~li{
+    width: 15rem;
+}
+.r2-esports li~li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.es-num{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 400;
+}
+.es-team{
+    width: 5rem;
+    height: 5rem;
+}
+.es1{
+    background:url('../images/esports/blg.png')no-repeat center center/100%;
+}
+.es2{
+    background:url('../images/esports/t1.png')no-repeat center center/100%;
+}
+.es3{
+    background:url('../images/esports/geng.png')no-repeat center center/90%;
+}
+.ex-date{
+    width: 100%;
+    height: 15rem;
+    background-color: rgba(217, 217, 217, 10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.extit{
+    width: 5rem;
+    font-size: 2rem;
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    margin-left: 1rem;
+}
+.extit::after{
+    content: 'AM';
+    display: block;
+    font-size: 1rem;
+    position: absolute;
+    top:0.3rem; right: -1.5rem;
+    color: #949494;
+}
+.verses{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    width: 20rem;
+    position: absolute;
+    top: 30%; left: 50%;
+    transform: translateX(-50%);
+}
+.vteam{
+    width: 4.8rem;
+    height: 4.8rem;
+    margin: 0 auto;
+}
+.vt1{
+    background: url('../images/esports/th.png')no-repeat center center/cover;
+    position: relative;
+}
+.vt1::after{
+    content: 'TH';
+    width: 2.4rem;
+    height: 2rem;
+    display: block;
+    font-size: 1.5rem;
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    bottom: -3rem; left: 50%;
+    transform: translateX(-50%);
+}
+.vt2{
+    background: url('../images/esports/rge.png')no-repeat center center/cover;
+    position: relative;
+}
+.vt2::after{
+    content: 'RGE';
+    width: 2.4rem;
+    height: 2rem;
+    display: block;
+    font-size: 1.5rem;
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    bottom: -3rem; left: 50%;
+    transform: translateX(-50%);
+}
+.verse{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.ex-info{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0.5rem; left: 50%;
+    transform: translateX(-10%);
+}
+.ex_inf{
+    color: #949494;
+}
+.ex_rule{
+    color: #949494;
+}
+
+#section3{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.s3_bg_item{
+    width: 162.5rem;
+    height: 50rem;
+    background: url('../images/bg/bgitem22.png')no-repeat center center/cover;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+}
+.s3_bg_item2{
+    width: 180rem;
+    height: 90rem;
+    background: url('../images/bg/valo_linebg.png')no-repeat center center/100%;
+    position: absolute;
+    top: 7rem; left: 6rem;
+}
+.s3_bg_item3{
+    width: 100rem;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 39rem; left: 16.5rem;
+}
+
+.s3_bg_item3 h1{
+    font-size: 20rem;
+    color: #7B2939;
+    opacity: 35%;
+    display: none;
+}
+.s3_bg_item4{
+    width: 88rem;
+    position: absolute;
+    top: 43.1rem; left: 70rem;
+}
+.s3_bg_item4 h1{
+    font-size: 16.5rem;
+    color: #7B2939;
+    opacity: 35%;
+}
+.s3_bg_item5{
+    width: 270rem;
+    position: absolute;
+    top: -0.5rem; left: 57%;
+}
+.s3_bg_item5 h1{
+    font-size: 20rem;
+    color: #7B2939;
+    opacity: 35%;
+}
+.s3header{
+    width: 180rem;
+    height: 7.5rem;
+    position: absolute;
+    top: 1rem; left: 6rem;
+    z-index: 99;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.s3logo{
+    width: 11rem;
+    height: 7.5rem;
+}
+.s3logo a{
+    width: 11rem;
+    height: 7.5rem;
+    display: block;
+    background: url('../images/logo/valo_logo.png')no-repeat center center/cover;
+}
+.s3dep1{
+display: flex;
+gap: 5rem;
+}
+.s3dep1 li{
+    line-height: 3rem;
+}
+.s3dep1 li a{
+display: block;
+ font-size: 1.5rem;
+ color: #fff;
+ position: relative;
+ transition: all .3s;
+}
+.s3dep1 li a:hover{
+    color: #7B2939;
+}
+.valo_line{
+    width: 110rem;
+    height: 0.2rem;
+    background: url('../images/valorant/header_line.png')no-repeat center center/cover;
+}
+.valo_btns{
+    display: flex;
+    gap: 3rem;
+}
+
+.vas{
+    width: 2.2rem;
+    height: 2.2rem;
+    background: url('../images/valorant/valo_search.png')no-repeat center center/cover;
+    display: block;
+}
+.vap{
+    width: 2.6rem;
+    height: 2.2rem;
+    background: url('../images/valorant/valo_profile.png')no-repeat center center/cover;
+    display: block;
+}
+.van{
+    width: 2.2rem;
+    height: 2.2rem;
+    background: url('../images/valorant/valo_network.png')no-repeat center center/cover;
+    display: block;
+}
+.valo_main{
+    width: 165rem;
+    height: 83rem;
+    position: absolute;
+    top: 10rem; left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.vleft{
+    width: 45rem;
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.val_sw{
+    width: 100%;
+    height: 41rem;
+    position: relative;
+}
+.valsw{
+    width: 100%;
+    height: 42.5rem;
+}
+.valsw .swiper-slide{
+background-color:#fff;
+box-shadow: 2px 4px 34px rgba(0, 0, 0, 25%);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+}
+.valsw .swiper-slide:nth-child(1) .vs_imgb{
+    width: 39rem;
+    height: 22rem;
+    background: url('../images/valsw/valsw1.png')no-repeat center center/cover;
+}
+.valsw .swiper-slide:nth-child(2) .vs_imgb{
+    width: 39rem;
+    height: 22rem;
+    background: url('../images/valsw/valsw2.png')no-repeat center center/cover;
+}
+.valsw .swiper-slide:nth-child(3) .vs_imgb{
+    width: 39rem;
+    height: 22rem;
+    background: url('../images/valsw/valsw3.png')no-repeat center center/cover;
+}
+.valtxt{
+    width: 39rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+.val_noti{
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+}
+.rno{
+    font-size: 2rem;
+    color:#ff4655;
+}
+.val_date{
+    color: #949494;
+    font-size: 2rem;
+}
+.vstitle{
+    font-size: 3rem;
+}
+.vs_sub{
+    font-size: 2rem;
+}
+.val_sw  .swiper-pagination2 {
+    width: 6rem;
+position: absolute;
+bottom: -7%; left: 50%;
+transform: translateX(-50%);
+z-index: 33;
+}
+.val_sw  .swiper-pagination2 .swiper-pagination-bullet{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 0;
+    background-color: #FFBCC1;
+}
+.val_sw  .swiper-pagination2 .swiper-pagination-bullet-active{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 0;
+    background-color: #FF4655; 
+}
+.val_teo{
+    width: 100%;
+    height: 34rem;
+}
+.teo_txt{
+    font-size: 2rem;
+    text-align: end;
+}
+.teo_txt h2:nth-child(1){
+    background: linear-gradient(to bottom, #FCC992, #FE9C50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.teo_txt h2:nth-child(2){
+  background: linear-gradient(to top, #F4D9B3, #755947);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.vright{
+    width: 105em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.char_3d{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.char_3d li {
+    width: 23rem;
+    height: 67rem;
+   position: relative;
+   border-top-left-radius: 2.5rem;
+   border-bottom-right-radius: 2.5rem;
+   background-color: #52000F;
+   box-shadow: rgba(0, 0, 0, 50%) 340px 4px 4px inset; 
+transition: all .5s;
+
+}
+
+.char_3d li a{
+    width: 23rem;
+    height: 67rem;
+    display: block;
+    transform-style:preserve-3d;
+    border-top-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    perspective: 500rem;
+    position: relative;
+    z-index: 3;
+}
+.bfilter{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 0;
+    opacity: 0;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 30%);
+    transition: all .5s;
+    border-top-left-radius: 2.5rem;
+   border-bottom-right-radius: 2.5rem;
+}
+.c_side p{
+position: absolute;
+top: 23%; left: -50%;
+transform: rotate(-90deg);
+-webkit-text-stroke: 1px  #fff;
+color: transparent;
+opacity: 0.7;
+z-index: 4;
+}
+.ment{
+    width: 30rem;
+    height: 5rem;
+    color: #000;
+    backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, 0.66);
+    position: absolute;
+    bottom: 30%; left: -10%;
+    z-index: 33;
+    display: flex;
+    align-items: center;
+}
+.vc1{
+    background: url('../images/valo_cha/valoc1.png')no-repeat center center;  
+    position: relative;
+    transition: all .5s;
+}
+.vca .himg{
+    width: 30rem;
+    height: 65.3rem;  
+position: absolute;
+top: 0rem; left: -5rem;
+z-index: -1;
+opacity: 0;
+transition: all .5s;
+}
+.vca .c_name{
+    font-size: 1.8rem;
+    color: #fff;
+    top: 3rem; left: 4rem;
+    position: relative;
+transition: all .5s;
+z-index: 4;
+}
+.vca .c_top_name{
+   position: absolute;
+   top: -7.5%;
+   color: #fff;
+   opacity: 0;
+   transform: translateY(5rem);
+   transition: all .5s;
+   z-index: 0;
+}
+.vca .c_name::before{
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background: url('../images/valo_cha/mark1.png')no-repeat center center/cover;
+    position: absolute;
+    left: -3rem; top: 0;
+transition: all .5s;
+
+}
+.char_3d li:hover{
+    transform: perspective(900px) translateY(-5%) rotateX(-3deg);
+    box-shadow: 0px 35px 32px -8px rgba(0, 0, 0, 0.75);  
+    background-color: #fff;
+}
+.char_3d li:hover .bfilter{
+opacity: 1;
+}
+.char_3d li:hover .vca{
+   backdrop-filter: blur(8px);
+}
+.char_3d li:hover .c_name{
+    color: #282828;
+}
+.char_3d li:hover .c_name::before{
+    background: url('../images/valo_cha/mark1_color.png')no-repeat center center/cover;
+}
+.char_3d li:hover .himg{
+    z-index: 3;
+    opacity: 1;
+  transform: translate3d(0%, 15%, -300px) translateZ(2rem);  
+}
+.char_3d li:hover .vca .c_top_name{
+    opacity: 1;
+    transform: translateY(0);
+}
+.char_3d li:hover .c_side p{
+    -webkit-text-stroke: 1px #000;
+}
+.sk_info{
+    position: absolute;
+    bottom: -9%; left: 9%;
+    width: 22rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    transform: translateY(-5rem);
+    z-index: 9;
+    transition: all .5s;
+}
+.char_3d li:hover .sk_info{
+    opacity: 1;
+    transform: translateY(0rem);
+}
+.sk1{
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url('../images/valo_cha/sk1.png')no-repeat center center/cover;
+}
+.sk2{
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url('../images/valo_cha/sk2.png')no-repeat center center/cover;
+}
+.sk3{
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url('../images/valo_cha/sk3.png')no-repeat center center/cover;
+}
+.sk4{
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url('../images/valo_cha/sk4.png')no-repeat center center/cover;
+}
+.sk5{
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url('../images/valo_cha/sk5.png')no-repeat center center/cover;
+}
+.sk6{
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url('../images/valo_cha/sk6.png')no-repeat center center/cover;
+}
+.sk7{
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url('../images/valo_cha/sk7.png')no-repeat center center/cover;
+}
+.sk8{
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url('../images/valo_cha/sk8.png')no-repeat center center/cover;
+}
+.sk9{
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url('../images/valo_cha/sk9.png')no-repeat center center/cover;
+}
+.sk10{
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url('../images/valo_cha/sk10.png')no-repeat center center/cover;
+}
+.sk11{
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url('../images/valo_cha/sk11.png')no-repeat center center/cover;
+}
+.sk12{
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url('../images/valo_cha/sk12.png')no-repeat center center/cover;
+}
+.sk13{
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url('../images/valo_cha/sk13.png')no-repeat center center/cover;
+}
+.sk14{
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url('../images/valo_cha/sk14.png')no-repeat center center/cover;
+}
+.sk15{
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url('../images/valo_cha/k15.png')no-repeat center center/cover;
+}
+.sk16{
+    width: 3.8rem;
+    height: 3.8rem;
+    background: url('../images/valo_cha/sk16.png')no-repeat center center/cover;
+}
+.vc2{
+    background: url('../images/valo_cha/valoc2.png')no-repeat center center;  
+    transition: all .5s;
+}
+.vc2 .c_side p{
+    position: absolute;
+    top: 15%; left: -28%;
+    z-index: 4;
+    opacity: 0.7;
+}
+.vc2 .c_top_name{
+    position: absolute;
+   top: -8%; left: 20%;
+}
+.vc2 .c_name::before{
+    background: url('../images/valo_cha/mark2.png')no-repeat center center/cover;
+}
+.char_3d li:hover .vc2 .c_name::before{
+    background: url('../images/valo_cha/mark2_color.png')no-repeat center center/cover;
+}
+.vc3{
+    background: url('../images/valo_cha/valoc3.png')no-repeat center center;  
+    transition: all .5s;
+}
+.vc3 .c_top_name{
+    position: absolute;
+   top: -8%; left: 20%;
+}
+.vc3 .c_name::before{
+    background: url('../images/valo_cha/mark3.png')no-repeat center center/cover;
+}
+.char_3d li:hover .vc3 .c_name::before{
+    background: url('../images/valo_cha/mark3_color.png')no-repeat center center/cover;
+}
+.vc3 .himg{
+    width: 30rem;
+    height: 69rem;  
+position: absolute;
+top: -4.3rem; left: -3rem;
+z-index: -1;
+opacity: 0;
+transition: all .5s;
+}
+.vc3 .c_side p{
+    position: absolute;
+    top: 18%; left: -35%;
+    z-index: 4;
+    opacity: 0.7;
+}
+.vc4{
+    background: url('../images/valo_cha/valoc4.png')no-repeat center bottom;  
+    transition: all .5s;
+}
+.vc4 .c_name::before{
+    background: url('../images/valo_cha/mark1.png')no-repeat center center/cover;
+}
+.char_3d li:hover .vc4 .c_name::before{
+    background: url('../images/valo_cha/mark1_color.png')no-repeat center center/cover;
+}
+.vc4 .himg{
+    width: 30rem;
+    height: 69rem;  
+position: absolute;
+top: -5rem; left: 0rem;
+z-index: -1;
+opacity: 0;
+transition: all .5s;
+}
+.vc4 .c_side p{
+    position: absolute;
+    top: 16.5%; left: -30%;
+    z-index: 4;
+    opacity: 0.7;
+}
+.vc4 .c_top_name{
+    position: absolute;
+   top: -8%; right: 8%;
+   color: #000;
+}
+.game_btn{
+    width: 18.5em;
+    height: 6rem;
+    display: block;
+    background: url('../images/valorant/game_btn.png')no-repeat center center/cover;
+    position: absolute;
+    bottom: 3%; left: 50%;
+    transform: translateX(-55%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+.game_btn p{
+color: #fff;
+transition: all .5s;
+
+}
+.game_btn:hover {
+background: url('../images/valorant/game_btn_color.png')no-repeat center center/cover;
+}
+.game_btn:hover p{
+    color: #FF4655;
+}
+.valo_logo2{
+    width: 3.7rem;
+    height: 25.9rem;
+    background: url('../images/valorant/valo_logo3.png')no-repeat center center/cover;
+    position: absolute;
+    right: 5rem; bottom: 6.5rem;
+}
+.left_deco{
+    width: 6rem;
+    height: 10rem;
+    position: absolute;
+    bottom: 9%; left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left_deco span{
+    width: 6rem;
+    height: 3rem;
+    display: block;
+    border: 2px solid #FF7C87;
+    transform: skewY(25deg);
+}
+.left_deco span:nth-child(1){
+    animation: fis 10s linear infinite;
+}
+@keyframes fis {
+    0%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: #FF7C87;
+    }
+}
+.left_deco span:nth-child(2){
+    animation: fis 8s 2s linear infinite;
+}
+@keyframes fis {
+    0%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: #FF7C87;
+    }
+}
+.left_deco span:nth-child(3){
+    animation: fis 7s 3s linear infinite;
+}
+@keyframes fis {
+    0%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: #FF7C87;
+    }
+}
+
+#section4{
+    width: 100%;
+    background-color: #000;
+    position: relative;
+}
+
+.s4bg_item{
+    width: 100%;
+    height: 45.7rem;
+    background: url('../images/bg/esport_bg.png')no-repeat center  center/cover;
+    position: absolute;
+    top: 5rem; left: 0;
+    z-index: 1;
+}
+.s4header{
+    width: 100%;
+    height: 6rem;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 2;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+.s4_head_in{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.s4h_l{
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    gap: 9rem;
+}
+.s4logo{
+    width: 13.3rem;
+    height: 4.1rem;
+    background: url('../images/esport/esport_logo.png')no-repeat center  center/cover;
+}
+.s4_menu{
+    display: flex;
+gap: 6rem;
+}
+.s4_menu li{
+    line-height: 6rem;
+}
+.s4_menu li a{
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #10E4F9;
+    transition: all .3s;
+}
+.s4_menu li:hover a{
+    color: #fff;
+}
+.es_update h2{
+font-size: 1.8rem;
+color: #fff;
+opacity: 0.35;
+}
+.esports_main{
+    width: 180rem;
+    height: calc(100% - 9rem);
+    position: absolute;
+    top: 8rem; left: 13rem;
+    z-index: 3;
+    display: flex;
+    justify-content: space-evenly;
+}
+.es_left{
+    width: 140rem;
+    height: 100%;
+}
+.es_top{
+    width: 100%;
+    height: 58rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 9rem;
+}
+.es_bottom{
+    width: 100%;
+    height: calc(100% - 58rem);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.es_right{
+    width: 37rem;
+    height: 86.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.es_t_mid{
+    width: 18rem;
+    height: 44.5rem;
+    margin-bottom: 1rem;
+}
+.es_t_right{
+    width: 38rem;
+    height: 58rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.es_t_right  h2{
+    font-size: 2rem;
+    color: #fff;
+}
+.es_t_right p{
+    font-size: 1.6rem;
+    color: #fff;
+}
+.es_t_le{
+    width: 64rem;
+    height: 58rem;
+    display: flex;
+    flex-direction: column;
+}
+.es_news{
+    width: 64rem;
+    height: 25.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.es_news h2  {
+    width: 15rem;
+    font-size: 2rem;
+    color: #fff;
+    
+}
+.es_new_list{
+    display: flex;
+    justify-content: space-between;
+}
+.es_new_list li{
+    width: 19.3rem;
+    height: 22rem;  
+}
+.es_new_list li a{
+   width: 100%;
+   height: 100%;;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.esn_imgb{
+    width: 19.3rem;
+    height: 12.8rem;
+    border: 0.5rem;
+}
+.esni1{
+    background: url('../images/esport/es_new1.png')no-repeat  center center/cover;
+}
+.esni2{
+    background: url('../images/esport/es_new2.png')no-repeat center center/cover;
+}
+.esni3{
+    background: url('../images/esport/es_new3.png')no-repeat center center/cover;
+}
+.esn_txtb{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transition: all .3s;
+}
+.esn_title{
+    font-size: 1.4rem;
+    color: #fff;
+}
+.esn_sub{
+    font-size: 0.8rem;
+    color: #fff;
+}
+.es_new_list li a:hover .esn_txtb{
+text-decoration: underline;
+color: #fff;
+}
+.es_r_c{
+    width: 100%;
+    height: 32.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.es_r_c_title{
+    width: 16rem; 
+    font-size: 2rem;
+    color: #fff;
+}
+.es_r_c_main{
+    display: flex;
+    justify-content: space-between;
+}
+.r_c_left , .r_c_right{
+    width: 30rem;
+    height: 28.5rem;
+    background-color: rgba(5, 5, 5, 60%);
+    box-shadow: 0 4px 43.4px rgba(255, 255, 255, 0.25);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.r_c_left h3, .r_c_right h3{
+    font-size: 1.5rem;
+    color: #929292;
+}
+.r_c_title{
+    width: 29rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 17rem;
+}
+.es_more{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #929292;
+    transition: all .3s;
+}
+.es_more:hover{
+    color: #10E4F9;
+}
+.most_news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.most_news  li{
+   width: 29rem;
+   height: 7rem;
+}
+.most_news li:nth-child(1){
+    border-bottom: 0.5px solid #929292;   
+}
+.most_news li:nth-child(2){
+    border-bottom: 0.5px solid #929292;   
+}
+.most_news li a{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content:space-between;
+}
+.most_imgb{
+    width: 9.4rem;
+    height: 6.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 25px rgba(255, 255, 255, 0.25);
+}
+.mosi1{
+    background: url('../images/esport/most_new_img1.png')no-repeat center center/cover;
+}
+.mosi2{
+    background: url('../images/esport/most_new_img2.png')no-repeat center center/cover;
+}
+.mosi3{
+    background: url('../images/esport/most_new_img3.png')no-repeat center center/cover;
+}
+.mosi4{
+    background: url('../images/esport/most_new_img4.png')no-repeat center center/cover;
+}
+.mosi5{
+    background: url('../images/esport/most_new_img5.png')no-repeat center center/cover;
+}
+.mosi6{
+    background: url('../images/esport/most_new_img6.png')no-repeat center center/cover;
+}
+.most_txtb{
+    width: 18.5rem;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   transition: all .3s;
+}
+.most_title{
+    font-size: 1.2rem;
+    color: #929292;
+}
+.most_sub{
+    font-size: 0.8rem;
+    color: #8E8E8E;
+}
+.r_c_right  .most_imgb{
+width: 6.5rem;
+height: 6.5rem;
+border-radius: 50%;
+}
+.r_c_right  .most_news li a{
+    width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content:space-around;
+   gap: 1rem;
+}
+.r_c_right .r_c_title{
+    width: 29rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 14rem;
+}
+
+.most_news  li a:hover .most_txtb{
+    text-decoration: underline;
+    color: #929292;
+}
+.dateswi{
+    width: 100%;
+    height: 100%;
+}
+.dateswi .swiper-slide{
+    background-color: #201c13;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 0.5rem;
+
+}
+.dateswi .swiper-slide:nth-child(3) .ex_date{
+    margin-bottom: 24rem;
+}
+.dateswi .swiper-slide:nth-child(6) .ex_date{
+    margin-bottom: 24rem;
+}
+.dateswi .swiper-slide:nth-child(7) .ex_date{
+    margin-bottom: 24rem;
+}
+.dateswi .stl-con  {
+    width: 18rem;
+    height: 4rem;
+    position: absolute;
+    display: block;
+    top: 5.5rem;
+    z-index: 22;
+    background-color: rgba(182, 154, 81, 50%);
+    border-top: 1px solid #504a3e;
+    border-bottom: 1px solid #504a3e;
+}
+.dateswi .swiper-pagination-bullet {
+    background-color: transparent;
+}
+.dateswi .stl-con .swiper-pagination-bullet span {
+   width: 100%;
+   height: 100%;
+    display: block;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    left: 0; top: 6px;  
+    color: #f2eeeb;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0  auto;
+}
+
+.dateswi .stl-con  .swiper-pagination-bullet-active span {
+    opacity: 1;
+}
+.d-prev{
+width: 1.5rem;
+height: 1.5rem;
+background: url('../images/esport/left_btn.png')no-repeat center center/contain;
+position: absolute;
+top: 6.5rem; left: 2rem;
+z-index: 99;
+cursor: pointer;
+}
+.d-next{
+width: 1.5rem;
+height: 1.5rem;
+background: url('../images/esport/left_btn.png')no-repeat center center/contain;
+position: absolute;
+top: 6.5rem; right: 2rem;
+transform: rotate(-180deg);
+z-index: 99;
+cursor: pointer;
+}
+.date_title{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 10.5rem;
+    color: #f2eeeb;
+}
+.date_title h2{
+    font-size: 2rem;
+}
+.ex_date{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 14.5rem;
+}
+.ex_date li {
+    width: 16.3rem;
+    height: 8rem;
+}
+.ex_date li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:rgba(80, 74, 62, 50%);
+}
+.dteam{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+}
+.dteam_img{
+    width: 3rem;
+    height: 3rem;
+    background: url('../images/esport/tbd.png')no-repeat center center/cover;
+}
+.dtm1{
+ background:url('../images/esport/dnf.png')no-repeat  center  center/cover;
+}
+.dtm2{
+ background:url('../images/esport/kt.png')no-repeat  center  center/cover;
+}
+.dtm3{
+ background:url('../images/esport/hle.png')no-repeat  center  center/cover;
+}
+.dtm4{
+ background:url('../images/esport/drx.png')no-repeat  center  center/cover;
+}
+.dtm5{
+ background:url('../images/esport/t1.png')no-repeat  center  center/cover;
+}
+.dtm6{
+ background:url('../images/esport/gneg.png')no-repeat  center  center/cover;
+}
+.dtm7{
+ background:url('../images/esport/ok\ brion.png')no-repeat  center  center/cover;
+}
+.dtm8{
+ background:url('../images/esport/dpluskia.png')no-repeat  center  center/cover;
+}
+.dtm9{
+ background:url('../images/esport/bnk.png')no-repeat  center  center/cover;
+}
+.dtm10{
+ background:url('../images/esport/ns.png')no-repeat  center  center/cover;
+}
+.dteam_name{
+    font-weight: bold;
+    color: #f2eeeb;
+}
+.versus_date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.expect{
+    width: 4rem;
+    text-align: center;
+    line-height: 1.6rem;
+    color: #000;
+    background-color: #d9d9d9;
+    border-radius: 5rem;
+}
+.time{
+    color: #f2eeeb;
+    font-weight: bold;
+}
+.cup_bg{
+    width: 10rem;
+    height: 7rem;
+    background: url('../images/esport/lck\ cup.png')no-repeat center center/cover;
+    opacity: 0.3;
+    position: absolute;
+    bottom: 10%; left: 50%;
+    transform: translateX(-50%);
+}
+.highlight{
+display: flex;
+flex-direction: column;
+gap: 0.8rem;
+}
+.live{
+display: flex;
+flex-direction: column;
+gap: 0.8rem;
+}
+.es_bot_tit h2{
+    font-size: 2rem;
+    color:#fff;
+ }
+.team_color{
+    width: 100%;
+   justify-content: space-between;
+    display: flex;
+}
+
+.team_color li  {
+    width: 23rem;
+    height: 22rem;
+}
+.team_color li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.wtm1{
+background-color:rgba(254, 190, 16, 50%);
+transition: all .3s;
+}
+.wtm1:hover {
+    box-shadow: 0 4px 43.4px rgba(254, 190, 16, 70%);
+}
+.wtm2{
+background-color:rgba(2, 137, 75, 70%);
+transition: all .3s;
+
+}
+.wtm2:hover {
+    box-shadow: 0 4px 43.4px rgba(2, 137, 75, 50%);
+}
+.wtm3{
+background-color:rgba(228, 0, 43, 50%);
+transition: all .3s;
+
+}
+.wtm3:hover {
+    box-shadow: 0 4px 43.4px rgba(228, 0, 43, 70%);
+}
+.wtm4{
+background-color:rgba(78, 119, 244, 50%);
+transition: all .3s;
+
+}
+.wtm4:hover {
+    box-shadow: 0 4px 43.4px rgba(78, 119, 244, 70%);
+}
+.wtm5{
+background-color:rgba(23, 23, 23, 50%);
+transition: all .3s;
+}
+
+.wtm5:hover {
+    box-shadow: 0 4px 43.4px rgba(255, 255, 255, 70%);
+}
+.wt_logo{
+    width: 11rem;
+    height: 11rem;
+}
+.wtl1{
+    background: url('../images/esport/gam.png')no-repeat center  center/cover;
+}
+.wtl2{
+    background: url('../images/esport/fq.png')no-repeat center  center/cover;
+}
+.wtl3{
+    background: url('../images/esport/t1_big.png')no-repeat center  center/cover;
+}
+.wtl4{
+    background: url('../images/esport/r7.png')no-repeat center  center/cover;
+}
+.wtl5{
+    background: url('../images/esport/geng_big.png')no-repeat center  center/cover;
+}
+.wt_txtb{
+    width: 19.5rem;
+    height: 7.5rem;
+    background-color: rgba(23, 23, 23, 47%);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.wtm1 .wt_txtb::before{
+content: '최대 순위 변동 1위';
+display: block;
+width: 15rem;
+line-height: 2.5rem;
+text-align: center;
+background-color: #fff;
+border-radius: 5rem;
+position: absolute;
+top: -1rem;
+color: #000;
+font-size: 1.5rem;
+font-weight: bold;
+}
+.wtm2 .wt_txtb::before{
+content: '최대 순위 변동 2위';
+display: block;
+width: 15rem;
+line-height: 2.5rem;
+text-align: center;
+background-color: #fff;
+border-radius: 5rem;
+position: absolute;
+top: -1rem;
+color: #000;
+font-size: 1.5rem;
+font-weight: bold;
+}
+.wtm3 .wt_txtb::before{
+content: '최대 순위 변동 3위';
+display: block;
+width: 15rem;
+line-height: 2.5rem;
+text-align: center;
+background-color: #fff;
+border-radius: 5rem;
+position: absolute;
+top: -1rem;
+color: #000;
+font-size: 1.5rem;
+font-weight: bold;
+}
+.wtm4 .wt_txtb::before{
+content: '최대 이변';
+display: block;
+width: 15rem;
+line-height: 2.5rem;
+text-align: center;
+background-color: #fff;
+border-radius: 5rem;
+position: absolute;
+top: -1rem;
+color: #000;
+font-size: 1.5rem;
+font-weight: bold;
+}
+.wtm5 .wt_txtb::before{
+content: '왕관의 무게';
+display: block;
+width: 15rem;
+line-height: 2.5rem;
+text-align: center;
+background-color: #fff;
+border-radius: 5rem;
+position: absolute;
+top: -1rem;
+color: #000;
+font-size: 1.5rem;
+font-weight: bold;
+}
+.wt_name{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.wt_main{
+    color: #A0A0A0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.esport_noti{
+    width: 33rem;
+    height: 30rem;
+    background-color: rgba(5, 5, 5, 60%);
+    box-shadow: 0 4px 43.4px rgba(255, 255, 255, 0.25);
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-end;
+border-radius: 0.5rem;
+position:relative;
+}
+.esport_noti h3{
+    color: #fff;
+    font-size: 2rem;
+    width: 10rem;
+    position: absolute;
+    top: 1.5rem; left: 1.2rem;
+}
+.espt_noti{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.espt_noti li {
+    width: 28.5rem;
+    height: 8rem;
+}
+.espt_noti li a{
+    width: 100%;
+    height: 100%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.espno_imgb{
+    width: 7rem;
+    height: 7rem;
+}
+.espno_txt{
+    width: 19.2rem;
+}
+.espno_ti{
+    font-size: 1.8rem;
+    color: #929292;
+}
+.espno_su{
+    font-size: 1.2rem;
+    color: #929292;
+}
+.esnib1{
+    background: url('../images/esport/noti1.png') center center/cover;
+}
+.esnib2{
+    background: url('../images/esport/noti2.png') 0% center/cover;
+}
+.esnib3{
+    background: url('../images/esport/noti3.png') left center/cover;
+}
+
+.espt_noti li:nth-child(1){
+    border-bottom: 2px solid #2B2B2B;   
+}
+.espt_noti li:nth-child(2){
+    border-bottom: 2px solid #2B2B2B;   
+}
+.live_trend{
+    width: 33rem;
+    height: 53.5rem;
+    border-radius: 0.5rem;
+    background-color: rgba(16, 16, 16, 50%);
+    box-shadow: 0 4px 48.4px rgba(255, 255, 255, 0.25);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.trend_bg{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 80%);
+    border-radius: 0.5rem; 
+    display: flex;
+    justify-content: center;
+}
+.trend_tit{
+    width: 29rem;
+    height: 6.5rem;
+    background-color: rgba(0, 0, 0, 80%);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trend_tit h3{
+    color: #fff;
+    font-size: 2rem;
+}
+.trend_tit a{
+    width: 2rem;
+    height: 2rem;
+    background: url('../images/esport/trend_arrow.png')no-repeat center center/contain;
+    display: block;
+}
+.trend{
+    width: 33rem;
+    height: 46rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.trend li{
+    width: 31rem;
+    height: 3rem;
+}
+.trend li a{
+    width: 31rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    transition: all .5s;
+}
+.trend li a:hover {
+    background-color: #fff;
+}
+.trend_l_txt{
+    display: flex;
+    gap: 3rem;
+}
+
+.trend_l_txt p {
+font-size: 2rem;
+color: #fff;
+font-weight: 700;
+transition: all .5s;
+}
+.trend li a:hover .trend_l_txt p{
+    color: #000;
+}
+.arrows{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.mint_arr{
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url('../images/esport/trend_up.png')no-repeat center center/contain;
+    transition: all .5s;
+}
+.trend li a:hover .mint_arr{
+    background: url('../images/esport/red_arr.png')no-repeat center center/cover;
+}
+.trend_data{
+    color: #b1b1b1;
+    font-size: 2rem;
+}
+.trend_new{
+    color: #DA0203;
+    font-size: 2rem;
+}
+
+.tlt10{
+gap: 1.7rem;
+}
+
+#footer{
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+.cs_center{
+    width: 100%;
+    height: 6rem;
+    background-color: #292929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cs_list{
+display: flex;
+gap: 3rem;
+}
+
+.cs_list li a{
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    transition: all  .3s;
+}
+.cs_list li a:hover{
+    color: #EC0024;
+}
+.mfoot{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+}
+.sns_list{
+    display: flex;
+    gap: 2rem;
+}
+.sns_list li{
+    width: 4.2rem;
+    height: 4.2rem;
+}
+.sns_list a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: grayscale(1);
+    transition: all .3s;
+}
+.sns_list li:nth-child(1) a{
+    background: url('../images/esport/facebook.png')no-repeat center center/cover;
+}
+.sns_list li:nth-child(2) a{
+    background: url('../images/esport/kakaotalk.png')no-repeat center center/cover;
+}
+.sns_list li:nth-child(3) a{
+    background: url('../images/esport/youtube.png')no-repeat center center/cover;
+}
+.sns_list li:nth-child(4) a{
+    background: url('../images/esport/insta.png')no-repeat center center/cover;
+}
+.sns_list a:hover {
+    filter: grayscale(0);
+}
+.flogo h2 {
+    width: 11.5rem;
+    height: 3rem;
+    background: url('../images/esport/flogo.png')no-repeat center center/cover;
+}
+.company_info{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+.company_info p{
+ color: #727272;
+ font-size: 2rem;
+}
+.copy p{
+    font-size: 1.5rem;
+}

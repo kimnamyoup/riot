@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'rix-reg';
+    src: url('../font/RIXGOM.TTF');
+}
+@font-face {
+    font-family: 'rix-b';
+    src: url('../font/RIXGOB.TTF');
+}
+@font-face {
+    font-family: 'ke';
+    src: url('../font/KeaniaOne-Regular.ttf');
+}
+.jin1::before{
+    font-family: 'rix-reg';
+}
+.jin1::after{
+    font-family: 'rix-reg';
+}
+
+.c_side p{
+    font-family: 'ke';
+    font-size: 6rem;
+}
+.c_top_name{
+ font-family: 'ke';
+ font-size: 6rem;  
+}
+.ment p{
+    font-size: 2rem;
+}
+.game_btn p{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+/* .lmenu{
+    font-family: 'rix-b';
+} */
