@@ -1118,7 +1118,7 @@ visibility: visible;
 }
 .s3_bg_item2{
     width: 180rem;
-    height: 90rem;
+    height: 86rem;
     background: url('../images/bg/valo_linebg.png')no-repeat center center/100%;
     position: absolute;
     top: 7rem; left: 6rem;
@@ -1337,7 +1337,7 @@ z-index: 33;
 }
 .vright{
     width: 105em;
-    height: 100%;
+    height: 83rem;
     display: flex;
     align-items: center;
 }
@@ -1658,7 +1658,7 @@ transition: all .5s;
     display: block;
     background: url('../images/valorant/game_btn.png')no-repeat center center/cover;
     position: absolute;
-    bottom: 3%; left: 50%;
+    bottom: 1%; left: 50%;
     transform: translateX(-55%);
     display: flex;
     align-items: center;
@@ -1681,13 +1681,13 @@ background: url('../images/valorant/game_btn_color.png')no-repeat center center/
     height: 25.9rem;
     background: url('../images/valorant/valo_logo3.png')no-repeat center center/cover;
     position: absolute;
-    right: 5rem; bottom: 6.5rem;
+    right: 5rem; bottom: 3rem;
 }
 .left_deco{
     width: 6rem;
     height: 10rem;
     position: absolute;
-    bottom: 9%; left: 3%;
+    bottom: 7%; left: 3%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
