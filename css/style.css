@@ -1117,9 +1117,9 @@ visibility: visible;
     z-index: -1;
 }
 .s3_bg_item2{
-    width: 180rem;
+    width: 182rem;
     height: 86rem;
-    background: url('../images/bg/valo_linebg.png')no-repeat center center/100%;
+    background: url('../images/bg/valo_linebg.png')no-repeat center center/contain;
     position: absolute;
     top: 7rem; left: 6rem;
 }
@@ -1687,7 +1687,7 @@ background: url('../images/valorant/game_btn_color.png')no-repeat center center/
     width: 6rem;
     height: 10rem;
     position: absolute;
-    bottom: 7%; left: 3%;
+    bottom: 7%; left: 4.3%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
